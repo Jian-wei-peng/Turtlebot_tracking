@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "name": "linux-gcc-x64",
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/home/pjw/Turtlebot_tracking/devel/include/**",
+        "/home/pjw/Turtlebot_tracking/src/robot_simulations/turtlebot/turtlebot3_simulations/turtlebot3_fake/include/**",
+        "/home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/include/**"
+      ],
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "${default}",
+      "cppStandard": "${default}",
+      "intelliSenseMode": "linux-gcc-x64",
+      "compilerArgs": [
+        ""
+      ]
+    }
+  ],
+  "version": 4
+}
