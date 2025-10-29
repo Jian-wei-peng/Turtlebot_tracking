@@ -1,4 +1,4 @@
-#include "pure_pursuit_controller/utils/visualizer.hpp"
+#include "pure_pursuit_controller/util/visualizer.hpp"
 
 namespace pure_pursuit_controller {
 
@@ -15,8 +15,6 @@ visualization_msgs::Marker Visualizer::ConvertToMarker(const std::vector<PathPoi
     marker.scale.x = 0.02;
     marker.color.a = 1.0;
     marker.color.b = 1.0;
-
-    // 初始化 pose 四元数，避免 RViz 警告
     marker.pose.orientation.x = 0.0;
     marker.pose.orientation.y = 0.0;
     marker.pose.orientation.z = 0.0;

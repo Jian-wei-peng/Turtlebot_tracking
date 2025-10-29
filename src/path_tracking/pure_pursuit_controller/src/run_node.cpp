@@ -1,6 +1,6 @@
 #include <ros/ros.h>
-#include "pure_pursuit_controller/utils/path_generator.hpp"
-#include "pure_pursuit_controller/utils/visualizer.hpp"
+#include "pure_pursuit_controller/util/path_generator.hpp"
+#include "pure_pursuit_controller/util/visualizer.hpp"
 #include "pure_pursuit_controller/pure_pursuit.hpp"
 
 int main(int argc, char** argv) {
@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
     // === controller ===
     pure_pursuit_controller::PurePursuit controller(nh);
 
-    ros::Rate rate(20);
+    ros::Rate rate(10);
     while (ros::ok()) {
         // publish visualization periodically (latched publishers used in node init;
         // we still publish here to keep stamp updated / make sure RViz receives)

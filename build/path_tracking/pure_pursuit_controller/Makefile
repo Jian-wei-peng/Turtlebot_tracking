@@ -851,86 +851,86 @@ src/run_node.cpp.s:
 	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller_node.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller_node.dir/src/run_node.cpp.s
 .PHONY : src/run_node.cpp.s
 
-src/utils/math_tool.o: src/utils/math_tool.cpp.o
+src/util/math_tool.o: src/util/math_tool.cpp.o
 
-.PHONY : src/utils/math_tool.o
-
-# target to build an object file
-src/utils/math_tool.cpp.o:
-	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/math_tool.cpp.o
-.PHONY : src/utils/math_tool.cpp.o
-
-src/utils/math_tool.i: src/utils/math_tool.cpp.i
-
-.PHONY : src/utils/math_tool.i
-
-# target to preprocess a source file
-src/utils/math_tool.cpp.i:
-	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/math_tool.cpp.i
-.PHONY : src/utils/math_tool.cpp.i
-
-src/utils/math_tool.s: src/utils/math_tool.cpp.s
-
-.PHONY : src/utils/math_tool.s
-
-# target to generate assembly for a file
-src/utils/math_tool.cpp.s:
-	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/math_tool.cpp.s
-.PHONY : src/utils/math_tool.cpp.s
-
-src/utils/path_generator.o: src/utils/path_generator.cpp.o
-
-.PHONY : src/utils/path_generator.o
+.PHONY : src/util/math_tool.o
 
 # target to build an object file
-src/utils/path_generator.cpp.o:
-	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/path_generator.cpp.o
-.PHONY : src/utils/path_generator.cpp.o
+src/util/math_tool.cpp.o:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/math_tool.cpp.o
+.PHONY : src/util/math_tool.cpp.o
 
-src/utils/path_generator.i: src/utils/path_generator.cpp.i
+src/util/math_tool.i: src/util/math_tool.cpp.i
 
-.PHONY : src/utils/path_generator.i
+.PHONY : src/util/math_tool.i
 
 # target to preprocess a source file
-src/utils/path_generator.cpp.i:
-	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/path_generator.cpp.i
-.PHONY : src/utils/path_generator.cpp.i
+src/util/math_tool.cpp.i:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/math_tool.cpp.i
+.PHONY : src/util/math_tool.cpp.i
 
-src/utils/path_generator.s: src/utils/path_generator.cpp.s
+src/util/math_tool.s: src/util/math_tool.cpp.s
 
-.PHONY : src/utils/path_generator.s
+.PHONY : src/util/math_tool.s
 
 # target to generate assembly for a file
-src/utils/path_generator.cpp.s:
-	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/path_generator.cpp.s
-.PHONY : src/utils/path_generator.cpp.s
+src/util/math_tool.cpp.s:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/math_tool.cpp.s
+.PHONY : src/util/math_tool.cpp.s
 
-src/utils/visualizer.o: src/utils/visualizer.cpp.o
+src/util/path_generator.o: src/util/path_generator.cpp.o
 
-.PHONY : src/utils/visualizer.o
+.PHONY : src/util/path_generator.o
 
 # target to build an object file
-src/utils/visualizer.cpp.o:
-	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/visualizer.cpp.o
-.PHONY : src/utils/visualizer.cpp.o
+src/util/path_generator.cpp.o:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/path_generator.cpp.o
+.PHONY : src/util/path_generator.cpp.o
 
-src/utils/visualizer.i: src/utils/visualizer.cpp.i
+src/util/path_generator.i: src/util/path_generator.cpp.i
 
-.PHONY : src/utils/visualizer.i
+.PHONY : src/util/path_generator.i
 
 # target to preprocess a source file
-src/utils/visualizer.cpp.i:
-	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/visualizer.cpp.i
-.PHONY : src/utils/visualizer.cpp.i
+src/util/path_generator.cpp.i:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/path_generator.cpp.i
+.PHONY : src/util/path_generator.cpp.i
 
-src/utils/visualizer.s: src/utils/visualizer.cpp.s
+src/util/path_generator.s: src/util/path_generator.cpp.s
 
-.PHONY : src/utils/visualizer.s
+.PHONY : src/util/path_generator.s
 
 # target to generate assembly for a file
-src/utils/visualizer.cpp.s:
-	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/visualizer.cpp.s
-.PHONY : src/utils/visualizer.cpp.s
+src/util/path_generator.cpp.s:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/path_generator.cpp.s
+.PHONY : src/util/path_generator.cpp.s
+
+src/util/visualizer.o: src/util/visualizer.cpp.o
+
+.PHONY : src/util/visualizer.o
+
+# target to build an object file
+src/util/visualizer.cpp.o:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/visualizer.cpp.o
+.PHONY : src/util/visualizer.cpp.o
+
+src/util/visualizer.i: src/util/visualizer.cpp.i
+
+.PHONY : src/util/visualizer.i
+
+# target to preprocess a source file
+src/util/visualizer.cpp.i:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/visualizer.cpp.i
+.PHONY : src/util/visualizer.cpp.i
+
+src/util/visualizer.s: src/util/visualizer.cpp.s
+
+.PHONY : src/util/visualizer.s
+
+# target to generate assembly for a file
+src/util/visualizer.cpp.s:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/visualizer.cpp.s
+.PHONY : src/util/visualizer.cpp.s
 
 # Help Target
 help:
@@ -993,15 +993,15 @@ help:
 	@echo "... src/run_node.o"
 	@echo "... src/run_node.i"
 	@echo "... src/run_node.s"
-	@echo "... src/utils/math_tool.o"
-	@echo "... src/utils/math_tool.i"
-	@echo "... src/utils/math_tool.s"
-	@echo "... src/utils/path_generator.o"
-	@echo "... src/utils/path_generator.i"
-	@echo "... src/utils/path_generator.s"
-	@echo "... src/utils/visualizer.o"
-	@echo "... src/utils/visualizer.i"
-	@echo "... src/utils/visualizer.s"
+	@echo "... src/util/math_tool.o"
+	@echo "... src/util/math_tool.i"
+	@echo "... src/util/math_tool.s"
+	@echo "... src/util/path_generator.o"
+	@echo "... src/util/path_generator.i"
+	@echo "... src/util/path_generator.s"
+	@echo "... src/util/visualizer.o"
+	@echo "... src/util/visualizer.i"
+	@echo "... src/util/visualizer.s"
 .PHONY : help
 
 

@@ -1,11 +1,11 @@
-#ifndef PATH_VISUALIZER_HPP_
-#define PATH_VISUALIZER_HPP_
+#ifndef VISUALIZER_HPP_
+#define VISUALIZER_HPP_
 
 #include <vector>
 #include <ros/ros.h>
 #include <visualization_msgs/Marker.h>
 #include <nav_msgs/Path.h>
-#include "pure_pursuit_controller/utils/path_generator.hpp"
+#include "pure_pursuit_controller/util/path_generator.hpp"
 
 namespace pure_pursuit_controller {
 

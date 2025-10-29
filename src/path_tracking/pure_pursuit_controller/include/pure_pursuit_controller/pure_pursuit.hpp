@@ -5,16 +5,11 @@
 #include <nav_msgs/Odometry.h>
 #include <geometry_msgs/Twist.h>
 #include <tf/transform_datatypes.h>
-#include "pure_pursuit_controller/utils/path_generator.hpp"
-#include "pure_pursuit_controller/utils/math_tool.hpp"
+#include "pure_pursuit_controller/util/path_generator.hpp"
+#include "pure_pursuit_controller/util/math_tool.hpp"
 
 namespace pure_pursuit_controller {
 
-/**
- * PurePursuit controller: 无内部循环，提供一次控制步的接口
- * - 订阅： "odom"
- * - 发布： "cmd_vel"
- */
 class PurePursuit {
 public:
     PurePursuit(ros::NodeHandle& nh);

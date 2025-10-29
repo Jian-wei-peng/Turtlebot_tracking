@@ -70,59 +70,59 @@ path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pure_pursuit_controller.dir/src/pure_pursuit.cpp.s"
 	cd /home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/pure_pursuit.cpp -o CMakeFiles/pure_pursuit_controller.dir/src/pure_pursuit.cpp.s
 
-path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/math_tool.cpp.o: path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/flags.make
-path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/math_tool.cpp.o: /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/utils/math_tool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pjw/Turtlebot_tracking/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/math_tool.cpp.o"
-	cd /home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pure_pursuit_controller.dir/src/utils/math_tool.cpp.o -c /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/utils/math_tool.cpp
+path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/math_tool.cpp.o: path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/flags.make
+path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/math_tool.cpp.o: /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/util/math_tool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pjw/Turtlebot_tracking/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/math_tool.cpp.o"
+	cd /home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pure_pursuit_controller.dir/src/util/math_tool.cpp.o -c /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/util/math_tool.cpp
 
-path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/math_tool.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pure_pursuit_controller.dir/src/utils/math_tool.cpp.i"
-	cd /home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/utils/math_tool.cpp > CMakeFiles/pure_pursuit_controller.dir/src/utils/math_tool.cpp.i
+path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/math_tool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pure_pursuit_controller.dir/src/util/math_tool.cpp.i"
+	cd /home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/util/math_tool.cpp > CMakeFiles/pure_pursuit_controller.dir/src/util/math_tool.cpp.i
 
-path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/math_tool.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pure_pursuit_controller.dir/src/utils/math_tool.cpp.s"
-	cd /home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/utils/math_tool.cpp -o CMakeFiles/pure_pursuit_controller.dir/src/utils/math_tool.cpp.s
+path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/math_tool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pure_pursuit_controller.dir/src/util/math_tool.cpp.s"
+	cd /home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/util/math_tool.cpp -o CMakeFiles/pure_pursuit_controller.dir/src/util/math_tool.cpp.s
 
-path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/path_generator.cpp.o: path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/flags.make
-path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/path_generator.cpp.o: /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/utils/path_generator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pjw/Turtlebot_tracking/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/path_generator.cpp.o"
-	cd /home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pure_pursuit_controller.dir/src/utils/path_generator.cpp.o -c /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/utils/path_generator.cpp
+path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/path_generator.cpp.o: path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/flags.make
+path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/path_generator.cpp.o: /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/util/path_generator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pjw/Turtlebot_tracking/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/path_generator.cpp.o"
+	cd /home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pure_pursuit_controller.dir/src/util/path_generator.cpp.o -c /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/util/path_generator.cpp
 
-path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/path_generator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pure_pursuit_controller.dir/src/utils/path_generator.cpp.i"
-	cd /home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/utils/path_generator.cpp > CMakeFiles/pure_pursuit_controller.dir/src/utils/path_generator.cpp.i
+path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/path_generator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pure_pursuit_controller.dir/src/util/path_generator.cpp.i"
+	cd /home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/util/path_generator.cpp > CMakeFiles/pure_pursuit_controller.dir/src/util/path_generator.cpp.i
 
-path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/path_generator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pure_pursuit_controller.dir/src/utils/path_generator.cpp.s"
-	cd /home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/utils/path_generator.cpp -o CMakeFiles/pure_pursuit_controller.dir/src/utils/path_generator.cpp.s
+path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/path_generator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pure_pursuit_controller.dir/src/util/path_generator.cpp.s"
+	cd /home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/util/path_generator.cpp -o CMakeFiles/pure_pursuit_controller.dir/src/util/path_generator.cpp.s
 
-path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/visualizer.cpp.o: path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/flags.make
-path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/visualizer.cpp.o: /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/utils/visualizer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pjw/Turtlebot_tracking/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/visualizer.cpp.o"
-	cd /home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pure_pursuit_controller.dir/src/utils/visualizer.cpp.o -c /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/utils/visualizer.cpp
+path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/visualizer.cpp.o: path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/flags.make
+path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/visualizer.cpp.o: /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/util/visualizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pjw/Turtlebot_tracking/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/visualizer.cpp.o"
+	cd /home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pure_pursuit_controller.dir/src/util/visualizer.cpp.o -c /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/util/visualizer.cpp
 
-path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/visualizer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pure_pursuit_controller.dir/src/utils/visualizer.cpp.i"
-	cd /home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/utils/visualizer.cpp > CMakeFiles/pure_pursuit_controller.dir/src/utils/visualizer.cpp.i
+path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/visualizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pure_pursuit_controller.dir/src/util/visualizer.cpp.i"
+	cd /home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/util/visualizer.cpp > CMakeFiles/pure_pursuit_controller.dir/src/util/visualizer.cpp.i
 
-path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/visualizer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pure_pursuit_controller.dir/src/utils/visualizer.cpp.s"
-	cd /home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/utils/visualizer.cpp -o CMakeFiles/pure_pursuit_controller.dir/src/utils/visualizer.cpp.s
+path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/visualizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pure_pursuit_controller.dir/src/util/visualizer.cpp.s"
+	cd /home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/util/visualizer.cpp -o CMakeFiles/pure_pursuit_controller.dir/src/util/visualizer.cpp.s
 
 # Object files for target pure_pursuit_controller
 pure_pursuit_controller_OBJECTS = \
 "CMakeFiles/pure_pursuit_controller.dir/src/pure_pursuit.cpp.o" \
-"CMakeFiles/pure_pursuit_controller.dir/src/utils/math_tool.cpp.o" \
-"CMakeFiles/pure_pursuit_controller.dir/src/utils/path_generator.cpp.o" \
-"CMakeFiles/pure_pursuit_controller.dir/src/utils/visualizer.cpp.o"
+"CMakeFiles/pure_pursuit_controller.dir/src/util/math_tool.cpp.o" \
+"CMakeFiles/pure_pursuit_controller.dir/src/util/path_generator.cpp.o" \
+"CMakeFiles/pure_pursuit_controller.dir/src/util/visualizer.cpp.o"
 
 # External object files for target pure_pursuit_controller
 pure_pursuit_controller_EXTERNAL_OBJECTS =
 
 /home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/pure_pursuit.cpp.o
-/home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/math_tool.cpp.o
-/home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/path_generator.cpp.o
-/home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/utils/visualizer.cpp.o
+/home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/math_tool.cpp.o
+/home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/path_generator.cpp.o
+/home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/src/util/visualizer.cpp.o
 /home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller.dir/build.make
 /home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: /opt/ros/noetic/lib/libtf.so
 /home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: /opt/ros/noetic/lib/libtf2_ros.so

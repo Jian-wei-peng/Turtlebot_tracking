@@ -1,4 +1,4 @@
-#include "pure_pursuit_controller/utils/path_generator.hpp"
+#include "pure_pursuit_controller/util/path_generator.hpp"
 
 namespace pure_pursuit_controller {
 

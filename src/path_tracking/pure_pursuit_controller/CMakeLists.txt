@@ -130,9 +130,9 @@ include_directories(
 
 set(SRC_FILES
   src/pure_pursuit.cpp
-  src/utils/math_tool.cpp
-  src/utils/path_generator.cpp
-  src/utils/visualizer.cpp
+  src/util/math_tool.cpp
+  src/util/path_generator.cpp
+  src/util/visualizer.cpp
 )
 
 add_library(${PROJECT_NAME} ${SRC_FILES})
