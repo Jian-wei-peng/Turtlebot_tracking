@@ -183,6 +183,81 @@ pure_pursuit_controller/fast:
 .PHONY : pure_pursuit_controller/fast
 
 # Convenience name for target.
+path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller_gencfg.dir/rule:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller_gencfg.dir/rule
+.PHONY : path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller_gencfg.dir/rule
+
+# Convenience name for target.
+pure_pursuit_controller_gencfg: path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller_gencfg.dir/rule
+
+.PHONY : pure_pursuit_controller_gencfg
+
+# fast build rule for target.
+pure_pursuit_controller_gencfg/fast:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller_gencfg.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/pure_pursuit_controller_gencfg.dir/build
+.PHONY : pure_pursuit_controller_gencfg/fast
+
+# Convenience name for target.
+path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+.PHONY : path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_py: path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_py
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_py/fast:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_py/fast
+
+# Convenience name for target.
+path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+.PHONY : path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_lisp: path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_lisp
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_lisp/fast:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_lisp/fast
+
+# Convenience name for target.
+path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
+.PHONY : path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_gencfg: path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
+
+.PHONY : dynamic_reconfigure_gencfg
+
+# fast build rule for target.
+dynamic_reconfigure_gencfg/fast:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
+.PHONY : dynamic_reconfigure_gencfg/fast
+
+# Convenience name for target.
+path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+.PHONY : path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_eus: path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_eus
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_eus/fast:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_eus/fast
+
+# Convenience name for target.
 path_tracking/pure_pursuit_controller/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 path_tracking/pure_pursuit_controller/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
 .PHONY : path_tracking/pure_pursuit_controller/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
@@ -256,6 +331,21 @@ actionlib_generate_messages_lisp: path_tracking/pure_pursuit_controller/CMakeFil
 actionlib_generate_messages_lisp/fast:
 	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/actionlib_generate_messages_lisp.dir/build
 .PHONY : actionlib_generate_messages_lisp/fast
+
+# Convenience name for target.
+path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+.PHONY : path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_cpp: path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_cpp
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_cpp/fast:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
 
 # Convenience name for target.
 path_tracking/pure_pursuit_controller/CMakeFiles/tf_generate_messages_lisp.dir/rule:
@@ -768,6 +858,21 @@ tf_generate_messages_py/fast:
 .PHONY : tf_generate_messages_py/fast
 
 # Convenience name for target.
+path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+.PHONY : path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_nodejs: path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_nodejs
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_nodejs/fast:
+	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make path_tracking/pure_pursuit_controller/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
+
+# Convenience name for target.
 path_tracking/pure_pursuit_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
 	cd /home/pjw/Turtlebot_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 path_tracking/pure_pursuit_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 .PHONY : path_tracking/pure_pursuit_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
@@ -941,6 +1046,11 @@ help:
 	@echo "... install/strip"
 	@echo "... test"
 	@echo "... pure_pursuit_controller"
+	@echo "... pure_pursuit_controller_gencfg"
+	@echo "... dynamic_reconfigure_generate_messages_py"
+	@echo "... dynamic_reconfigure_generate_messages_lisp"
+	@echo "... dynamic_reconfigure_gencfg"
+	@echo "... dynamic_reconfigure_generate_messages_eus"
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... rebuild_cache"
@@ -948,6 +1058,7 @@ help:
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... edit_cache"
+	@echo "... dynamic_reconfigure_generate_messages_cpp"
 	@echo "... tf_generate_messages_lisp"
 	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... install/local"
@@ -985,6 +1096,7 @@ help:
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... tf_generate_messages_eus"
 	@echo "... tf_generate_messages_py"
+	@echo "... dynamic_reconfigure_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... src/pure_pursuit.o"

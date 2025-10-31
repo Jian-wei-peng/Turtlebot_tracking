@@ -1,0 +1,4 @@
+k: 1.0
+lf: 0.1
+default_speed: 0.5
+path_type: circle  # Options: circle, figure8

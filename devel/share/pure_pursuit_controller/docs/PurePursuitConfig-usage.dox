@@ -1,0 +1,9 @@
+\subsubsection usage Usage
+\verbatim
+<node name="pure_pursuit_controller" pkg="pure_pursuit_controller" type="pure_pursuit_controller">
+  <param name="k" type="double" value="1.0" />
+  <param name="lf" type="double" value="0.1" />
+  <param name="default_speed" type="double" value="0.5" />
+</node>
+\endverbatim
+

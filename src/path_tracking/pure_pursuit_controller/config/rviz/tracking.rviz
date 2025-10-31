@@ -4,7 +4,9 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
+        - /Odometry1
         - /Odometry1/Shape1
+        - /Marker1
       Splitter Ratio: 0.6029411554336548
     Tree Height: 730
   - Class: rviz/Selection
@@ -148,7 +150,7 @@ Visualization Manager:
       Marker Topic: /path_marker
       Name: Marker
       Namespaces:
-        odom: true
+        path_marker: true
       Queue Size: 100
       Value: true
   Enabled: true
@@ -216,4 +218,4 @@ Window Geometry:
     collapsed: true
   Width: 1660
   X: 491
-  Y: 73
+  Y: 36

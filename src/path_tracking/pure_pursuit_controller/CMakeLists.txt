@@ -14,6 +14,8 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   visualization_msgs
   tf
+  tf2
+  dynamic_reconfigure
 )
 
 ## System dependencies are found with CMake's conventions
@@ -96,6 +98,10 @@ find_package(catkin REQUIRED COMPONENTS
 #   cfg/DynReconf2.cfg
 # )
 
+generate_dynamic_reconfigure_options(
+  cfg/PurePursuit.cfg
+)
+
 ###################################
 ## catkin specific configuration ##
 ###################################
@@ -108,7 +114,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES ${PROJECT_NAME}
-  CATKIN_DEPENDS roscpp std_msgs nav_msgs geometry_msgs visualization_msgs tf
+  CATKIN_DEPENDS roscpp std_msgs nav_msgs geometry_msgs visualization_msgs tf tf2
 #  DEPENDS system_lib
 )
 

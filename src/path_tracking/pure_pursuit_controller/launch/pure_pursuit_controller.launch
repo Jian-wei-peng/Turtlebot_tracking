@@ -1,3 +1,13 @@
 <launch>
-  <node pkg="pure_pursuit_controller" type="pure_pursuit_controller_node" name="pure_pursuit_controller_node" output="screen" />
+  <!-- <node pkg="pure_pursuit_controller" type="pure_pursuit_controller_node" name="pure_pursuit_controller" output="screen">
+    <param name="k" value="1.0" />
+    <param name="lf" value="0.1" />
+    <param name="default_speed" value="0.5" />
+    <param name="path_type" value="circle" /> 
+  </node> -->
+
+  <node pkg="pure_pursuit_controller" type="pure_pursuit_controller_node" name="pure_pursuit_controller" output="screen">
+    <rosparam file="$(find pure_pursuit_controller)/config/yaml/pure_pursuit_params.yaml" command="load"/>
+  </node>
+
 </launch>

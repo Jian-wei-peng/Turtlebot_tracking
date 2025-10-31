@@ -38,6 +38,22 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/pure_pursuit_controller" TYPE FILE FILES "/home/pjw/Turtlebot_tracking/devel/include/pure_pursuit_controller/PurePursuitConfig.h")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/pure_pursuit_controller" TYPE FILE FILES "/home/pjw/Turtlebot_tracking/devel/lib/python3/dist-packages/pure_pursuit_controller/__init__.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/pjw/Turtlebot_tracking/devel/lib/python3/dist-packages/pure_pursuit_controller/cfg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/pure_pursuit_controller" TYPE DIRECTORY FILES "/home/pjw/Turtlebot_tracking/devel/lib/python3/dist-packages/pure_pursuit_controller/cfg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller/catkin_generated/installspace/pure_pursuit_controller.pc")
 endif()
 

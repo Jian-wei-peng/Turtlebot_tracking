@@ -22,4 +22,4 @@ int MathTool::GetMinDisIndex(const PathPoint& current_pose, const std::vector<Pa
     return index;
 }
 
-}  // namespace
+}  // namespace pure_pursuit_controller

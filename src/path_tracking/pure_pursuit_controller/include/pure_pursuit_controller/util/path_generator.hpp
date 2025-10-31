@@ -8,10 +8,8 @@
 namespace pure_pursuit_controller {
 
 enum class PathType {
-    LINE,
     CIRCLE,
-    FIGURE8,
-    SINE_WAVE
+    FIGURE8
 };
 
 struct PathPoint {
@@ -27,16 +25,11 @@ public:
 
     std::vector<PathPoint> CreatePath(PathType type);
 
-public:
-    ros::Publisher path_pub_;
-
 private:
-    std::vector<PathPoint> CreateLine();
     std::vector<PathPoint> CreateCircle();
     std::vector<PathPoint> CreateFigure8();
-    std::vector<PathPoint> CreateSineWave();
 };
 
-}  // namespace
+}  // namespace pure_pursuit_controller
 
 #endif

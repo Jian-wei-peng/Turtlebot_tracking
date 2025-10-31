@@ -5,4 +5,4 @@ Description: Description of pure_pursuit_controller
 Version: 0.0.0
 Cflags: -I${prefix}/include
 Libs: -L${prefix}/lib -lpure_pursuit_controller
-Requires: roscpp std_msgs nav_msgs geometry_msgs visualization_msgs tf
+Requires: roscpp std_msgs nav_msgs geometry_msgs visualization_msgs tf tf2

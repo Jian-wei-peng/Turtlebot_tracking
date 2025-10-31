@@ -1,0 +1,8 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~k" : \b [double] Lookahead gain min: 0.0, default: 1.0, max: 5.0
+- \b "~lf" : \b [double] Min lookahead distance min: 0.0, default: 0.1, max: 1.0
+- \b "~default_speed" : \b [double] Default linear speed min: 0.0, default: 0.5, max: 2.0
+

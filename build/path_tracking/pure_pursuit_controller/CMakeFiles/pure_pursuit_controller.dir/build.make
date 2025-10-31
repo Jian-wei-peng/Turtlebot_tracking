@@ -133,13 +133,14 @@ pure_pursuit_controller_EXTERNAL_OBJECTS =
 /home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
 /home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
 /home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: /opt/ros/noetic/lib/libtf2.so
-/home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: /opt/ros/noetic/lib/libroscpp_serialization.so
 /home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: /opt/ros/noetic/lib/librosconsole.so
 /home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
 /home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
 /home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
 /home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: /opt/ros/noetic/lib/libtf2.so
+/home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
+/home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: /opt/ros/noetic/lib/libroscpp_serialization.so
 /home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: /opt/ros/noetic/lib/librostime.so
 /home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
 /home/pjw/Turtlebot_tracking/devel/lib/libpure_pursuit_controller.so: /opt/ros/noetic/lib/libcpp_common.so

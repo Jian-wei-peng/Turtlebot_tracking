@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/pjw/Turtlebot_tracking/install/lib;/home/pjw/Turtlebot_tracking/devel/lib;/home/pjw/gaofei_planner/motion_planning/devel/lib;/home/pjw/NavRL/ros1/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/pjw/Turtlebot_tracking/install/lib;/home/pjw/ME5413_Planning_Project/devel/lib;/home/pjw/Turtlebot_tracking/devel/lib;/home/pjw/gaofei_planner/motion_planning/devel/lib;/home/pjw/NavRL/ros1/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -179,7 +179,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(pure_pursuit_controller_EXPORTED_TARGETS "")
+set(pure_pursuit_controller_EXPORTED_TARGETS "pure_pursuit_controller_gencfg")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${pure_pursuit_controller_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -187,7 +187,7 @@ foreach(t ${pure_pursuit_controller_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "roscpp;std_msgs;nav_msgs;geometry_msgs;visualization_msgs;tf")
+set(depends "roscpp;std_msgs;nav_msgs;geometry_msgs;visualization_msgs;tf;tf2")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
