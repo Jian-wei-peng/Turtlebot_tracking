@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/home/pjw/Turtlebot_tracking/devel/include/pure_pursuit_controller/PurePursuitConfig.h
+dynamic_reconfigure/config_tools.h
+-
+limits
+-
+ros/node_handle.h
+-
+dynamic_reconfigure/ConfigDescription.h
+-
+dynamic_reconfigure/ParamDescription.h
+-
+dynamic_reconfigure/Group.h
+-
+dynamic_reconfigure/config_init_mutex.h
+-
+boost/any.hpp
+-
+
 /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/include/pure_pursuit_controller/pure_pursuit.hpp
 ros/ros.h
 -
@@ -252,6 +270,22 @@ ros/serialization.h
 ros/builtin_message_traits.h
 -
 ros/message_operations.h
+-
+
+/opt/ros/noetic/include/dynamic_reconfigure/config_init_mutex.h
+boost/thread/mutex.hpp
+-
+ros/macros.h
+-
+
+/opt/ros/noetic/include/dynamic_reconfigure/config_tools.h
+string
+-
+vector
+-
+dynamic_reconfigure/Config.h
+-
+dynamic_reconfigure/Group.h
 -
 
 /opt/ros/noetic/include/dynamic_reconfigure/server.h

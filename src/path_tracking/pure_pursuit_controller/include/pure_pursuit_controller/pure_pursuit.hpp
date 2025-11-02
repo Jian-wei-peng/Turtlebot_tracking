@@ -17,7 +17,7 @@ class PurePursuit {
 public:
     PurePursuit(ros::NodeHandle& nh);
     ~PurePursuit() = default;
-    void ComputeAndPublish(const std::vector<PathPoint>& path_points);
+    void ComputeControlCommand(const std::vector<PathPoint>& path_points);
 
 private:
     void OdomCallback(const nav_msgs::Odometry::ConstPtr& msg);

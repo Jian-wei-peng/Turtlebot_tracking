@@ -57,7 +57,7 @@ int PurePursuit::FindLookaheadIndex(const std::vector<PathPoint>& path,
     return path.size() - 1;
 }
 
-void PurePursuit::ComputeAndPublish(const std::vector<PathPoint>& path_points) {
+void PurePursuit::ComputeControlCommand(const std::vector<PathPoint>& path_points) {
     if (!odom_ready_) {
         ROS_INFO("Waiting for /odom message...");
         return;

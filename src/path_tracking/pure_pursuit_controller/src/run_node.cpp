@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
     auto path_msg = pure_pursuit_controller::Visualizer::ConvertToROSPath(path_points);
 
     // Define pure pursuit controller and initialize
-    pure_pursuit_controller::PurePursuit controller(nh);
+    pure_pursuit_controller::PurePursuit PurePursuitController(nh);
 
     ros::Rate rate(10);
     while (ros::ok()) {
@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
         path_pub.publish(path_msg);
         
         // Execute pure pursuit control and publish cmd_vel
-        controller.ComputeAndPublish(path_points);
+        PurePursuitController.ComputeControlCommand(path_points);
         
         // Handle odom callback
         ros::spinOnce();
