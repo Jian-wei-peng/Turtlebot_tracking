@@ -5,8 +5,7 @@ namespace pure_pursuit_controller {
 PurePursuit::PurePursuit(ros::NodeHandle& nh) : nh_(nh),
                                                 odom_linear_v_(0.0),
                                                 odom_angular_v_(0.0),
-                                                odom_ready_(false)
-{
+                                                odom_ready_(false) {
     nh_.param("k", k_, 1.0); 
     nh_.param("lf", lf_, 0.1); 
     nh_.param("default_speed", default_speed_, 0.5);
@@ -19,8 +18,7 @@ PurePursuit::PurePursuit(ros::NodeHandle& nh) : nh_(nh),
     dr_srv_.setCallback(cb);
 }
 
-void PurePursuit::DynamicReconfigCallback(PurePursuitConfig &config, uint32_t level)
-{
+void PurePursuit::DynamicReconfigCallback(PurePursuitConfig &config, uint32_t level) {
     k_  = config.k;
     lf_ = config.lf;
     default_speed_ = config.default_speed;
@@ -39,8 +37,7 @@ void PurePursuit::OdomCallback(const nav_msgs::Odometry::ConstPtr& msg) {
 
 int PurePursuit::FindLookaheadIndex(const std::vector<PathPoint>& path,
                                     const PathPoint& current_pose, 
-                                    double ld)
-{
+                                    double ld) {
     if (path.empty()) return -1;
 
     // Find the nearest point index first

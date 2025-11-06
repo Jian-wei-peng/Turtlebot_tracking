@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "/home/pjw/Turtlebot_tracking/devel/lib/pure_pursuit_controller/pure_pursuit_controller_node"
   "/home/pjw/Turtlebot_tracking/devel/lib/pure_pursuit_controller/pure_pursuit_controller_node.pdb"
-  "CMakeFiles/pure_pursuit_controller_node.dir/src/run_node.cpp.o"
+  "CMakeFiles/pure_pursuit_controller_node.dir/src/run_pure_pursuit.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

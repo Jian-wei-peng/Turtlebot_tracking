@@ -156,7 +156,7 @@ target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/pure_pursuit_controller_node.cpp)
 
-add_executable(${PROJECT_NAME}_node src/run_node.cpp)
+add_executable(${PROJECT_NAME}_node src/run_pure_pursuit.cpp)
 
 target_link_libraries(${PROJECT_NAME}_node ${PROJECT_NAME} ${catkin_LIBRARIES})
 

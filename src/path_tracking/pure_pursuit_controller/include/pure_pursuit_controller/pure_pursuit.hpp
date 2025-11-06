@@ -25,7 +25,8 @@ private:
     int FindLookaheadIndex(const std::vector<PathPoint>& path, 
                            const PathPoint& current_pose, 
                            double ld);
-    void DynamicReconfigCallback(pure_pursuit_controller::PurePursuitConfig &config, uint32_t level);
+    void DynamicReconfigCallback(pure_pursuit_controller::PurePursuitConfig &config, 
+                                 uint32_t level);
 
 private:
     ros::NodeHandle nh_;

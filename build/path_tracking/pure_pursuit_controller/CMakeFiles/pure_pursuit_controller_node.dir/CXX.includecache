@@ -76,7 +76,7 @@ vector
 pure_pursuit_controller/util/path_generator.hpp
 /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/include/pure_pursuit_controller/util/pure_pursuit_controller/util/path_generator.hpp
 
-/home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/run_node.cpp
+/home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/src/run_pure_pursuit.cpp
 ros/ros.h
 -
 pure_pursuit_controller/util/path_generator.hpp

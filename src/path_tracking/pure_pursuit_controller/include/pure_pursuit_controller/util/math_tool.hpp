@@ -17,5 +17,5 @@ public:
     int GetMinDisIndex(const PathPoint& current_pose, const std::vector<PathPoint>& path);
 };
 
-}  // namespace
+}  // namespace pure_pursuit_controller
 #endif
