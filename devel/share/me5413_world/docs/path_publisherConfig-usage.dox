@@ -1,0 +1,12 @@
+\subsubsection usage Usage
+\verbatim
+<node name="path_publisher_node" pkg="me5413_world" type="path_publisher_node">
+  <param name="speed_target" type="double" value="0.5" />
+  <param name="track_A_axis" type="double" value="8.0" />
+  <param name="track_B_axis" type="double" value="8.0" />
+  <param name="track_wp_num" type="int" value="500" />
+  <param name="local_prev_wp_num" type="int" value="10" />
+  <param name="local_next_wp_num" type="int" value="50" />
+</node>
+\endverbatim
+

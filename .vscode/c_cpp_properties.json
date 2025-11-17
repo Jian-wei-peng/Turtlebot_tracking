@@ -6,7 +6,8 @@
         "/opt/ros/noetic/include/**",
         "/home/pjw/Turtlebot_tracking/devel/include/**",
         "/home/pjw/Turtlebot_tracking/src/robot_simulations/turtlebot/turtlebot3_simulations/turtlebot3_fake/include/**",
-        "/home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/include/**"
+        "/home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/include/**",
+        "/home/pjw/Turtlebot_tracking/src/ME5413_Planning_Project/src/me5413_world/include/**"
       ],
       "compilerPath": "/usr/bin/gcc",
       "cStandard": "${default}",

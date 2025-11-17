@@ -1,0 +1,11 @@
+\subsubsection usage Usage
+\verbatim
+<node name="path_tracker_node" pkg="me5413_world" type="path_tracker_node">
+  <param name="speed_target" type="double" value="0.5" />
+  <param name="PID_Kp" type="double" value="0.5" />
+  <param name="PID_Ki" type="double" value="0.2" />
+  <param name="PID_Kd" type="double" value="0.2" />
+  <param name="stanley_K" type="double" value="0.5" />
+</node>
+\endverbatim
+

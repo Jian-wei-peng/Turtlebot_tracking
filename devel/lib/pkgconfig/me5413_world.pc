@@ -1,0 +1,8 @@
+prefix=/home/pjw/Turtlebot_tracking/devel
+
+Name: me5413_world
+Description: Description of me5413_world
+Version: 0.0.0
+Cflags: -I/home/pjw/Turtlebot_tracking/devel/include -I/home/pjw/Turtlebot_tracking/src/ME5413_Planning_Project/src/me5413_world/include
+Libs: -L${prefix}/lib -lme5413_world
+Requires: roscpp rospy std_msgs geometry_msgs nav_msgs dynamic_reconfigure
