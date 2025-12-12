@@ -1,0 +1,8 @@
+prefix=/home/pjw/turtlebot_ws/devel
+
+Name: nav_learn
+Description: Description of nav_learn
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

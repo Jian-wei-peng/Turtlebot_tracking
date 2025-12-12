@@ -1,8 +1,8 @@
-# Install script for directory: /home/pjw/Turtlebot_tracking/src
+# Install script for directory: /home/pjw/turtlebot_ws/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/pjw/Turtlebot_tracking/install")
+  set(CMAKE_INSTALL_PREFIX "/home/pjw/turtlebot_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,6 +37,11 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   
       if (NOT EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
@@ -49,117 +54,118 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/pjw/Turtlebot_tracking/install/_setup_util.py")
+   "/home/pjw/turtlebot_ws/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/pjw/Turtlebot_tracking/install" TYPE PROGRAM FILES "/home/pjw/Turtlebot_tracking/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/pjw/turtlebot_ws/install" TYPE PROGRAM FILES "/home/pjw/turtlebot_ws/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/pjw/Turtlebot_tracking/install/env.sh")
+   "/home/pjw/turtlebot_ws/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/pjw/Turtlebot_tracking/install" TYPE PROGRAM FILES "/home/pjw/Turtlebot_tracking/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/pjw/turtlebot_ws/install" TYPE PROGRAM FILES "/home/pjw/turtlebot_ws/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/pjw/Turtlebot_tracking/install/setup.bash;/home/pjw/Turtlebot_tracking/install/local_setup.bash")
+   "/home/pjw/turtlebot_ws/install/setup.bash;/home/pjw/turtlebot_ws/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/pjw/Turtlebot_tracking/install" TYPE FILE FILES
-    "/home/pjw/Turtlebot_tracking/build/catkin_generated/installspace/setup.bash"
-    "/home/pjw/Turtlebot_tracking/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/pjw/turtlebot_ws/install" TYPE FILE FILES
+    "/home/pjw/turtlebot_ws/build/catkin_generated/installspace/setup.bash"
+    "/home/pjw/turtlebot_ws/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/pjw/Turtlebot_tracking/install/setup.sh;/home/pjw/Turtlebot_tracking/install/local_setup.sh")
+   "/home/pjw/turtlebot_ws/install/setup.sh;/home/pjw/turtlebot_ws/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/pjw/Turtlebot_tracking/install" TYPE FILE FILES
-    "/home/pjw/Turtlebot_tracking/build/catkin_generated/installspace/setup.sh"
-    "/home/pjw/Turtlebot_tracking/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/pjw/turtlebot_ws/install" TYPE FILE FILES
+    "/home/pjw/turtlebot_ws/build/catkin_generated/installspace/setup.sh"
+    "/home/pjw/turtlebot_ws/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/pjw/Turtlebot_tracking/install/setup.zsh;/home/pjw/Turtlebot_tracking/install/local_setup.zsh")
+   "/home/pjw/turtlebot_ws/install/setup.zsh;/home/pjw/turtlebot_ws/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/pjw/Turtlebot_tracking/install" TYPE FILE FILES
-    "/home/pjw/Turtlebot_tracking/build/catkin_generated/installspace/setup.zsh"
-    "/home/pjw/Turtlebot_tracking/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/pjw/turtlebot_ws/install" TYPE FILE FILES
+    "/home/pjw/turtlebot_ws/build/catkin_generated/installspace/setup.zsh"
+    "/home/pjw/turtlebot_ws/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/pjw/Turtlebot_tracking/install/setup.fish;/home/pjw/Turtlebot_tracking/install/local_setup.fish")
+   "/home/pjw/turtlebot_ws/install/setup.fish;/home/pjw/turtlebot_ws/install/local_setup.fish")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/pjw/Turtlebot_tracking/install" TYPE FILE FILES
-    "/home/pjw/Turtlebot_tracking/build/catkin_generated/installspace/setup.fish"
-    "/home/pjw/Turtlebot_tracking/build/catkin_generated/installspace/local_setup.fish"
+file(INSTALL DESTINATION "/home/pjw/turtlebot_ws/install" TYPE FILE FILES
+    "/home/pjw/turtlebot_ws/build/catkin_generated/installspace/setup.fish"
+    "/home/pjw/turtlebot_ws/build/catkin_generated/installspace/local_setup.fish"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/pjw/Turtlebot_tracking/install/.rosinstall")
+   "/home/pjw/turtlebot_ws/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/pjw/Turtlebot_tracking/install" TYPE FILE FILES "/home/pjw/Turtlebot_tracking/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/pjw/turtlebot_ws/install" TYPE FILE FILES "/home/pjw/turtlebot_ws/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/pjw/Turtlebot_tracking/build/gtest/cmake_install.cmake")
-  include("/home/pjw/Turtlebot_tracking/build/robot_simulations/turtlebot/turtlebot3/turtlebot3/cmake_install.cmake")
-  include("/home/pjw/Turtlebot_tracking/build/robot_simulations/turtlebot/turtlebot3_msgs/cmake_install.cmake")
-  include("/home/pjw/Turtlebot_tracking/build/robot_simulations/turtlebot/turtlebot3/turtlebot3_navigation/cmake_install.cmake")
-  include("/home/pjw/Turtlebot_tracking/build/robot_simulations/turtlebot/turtlebot3_simulations/turtlebot3_simulations/cmake_install.cmake")
-  include("/home/pjw/Turtlebot_tracking/build/ME5413_Planning_Project/src/jackal_description/cmake_install.cmake")
-  include("/home/pjw/Turtlebot_tracking/build/path_tracking/pure_pursuit_controller/cmake_install.cmake")
-  include("/home/pjw/Turtlebot_tracking/build/robot_simulations/turtlebot/turtlebot3/turtlebot3_bringup/cmake_install.cmake")
-  include("/home/pjw/Turtlebot_tracking/build/robot_simulations/turtlebot/turtlebot3/turtlebot3_example/cmake_install.cmake")
-  include("/home/pjw/Turtlebot_tracking/build/robot_simulations/turtlebot/turtlebot3_simulations/turtlebot3_fake/cmake_install.cmake")
-  include("/home/pjw/Turtlebot_tracking/build/robot_simulations/turtlebot/turtlebot3_simulations/turtlebot3_gazebo/cmake_install.cmake")
-  include("/home/pjw/Turtlebot_tracking/build/robot_simulations/turtlebot/turtlebot3/turtlebot3_slam/cmake_install.cmake")
-  include("/home/pjw/Turtlebot_tracking/build/robot_simulations/turtlebot/turtlebot3/turtlebot3_teleop/cmake_install.cmake")
-  include("/home/pjw/Turtlebot_tracking/build/ME5413_Planning_Project/src/me5413_world/cmake_install.cmake")
-  include("/home/pjw/Turtlebot_tracking/build/robot_simulations/turtlebot/turtlebot3/turtlebot3_description/cmake_install.cmake")
+  include("/home/pjw/turtlebot_ws/build/gtest/cmake_install.cmake")
+  include("/home/pjw/turtlebot_ws/build/robot_simulations/turtlebot/turtlebot3/turtlebot3/cmake_install.cmake")
+  include("/home/pjw/turtlebot_ws/build/robot_simulations/turtlebot/turtlebot3_msgs/cmake_install.cmake")
+  include("/home/pjw/turtlebot_ws/build/robot_simulations/turtlebot/turtlebot3/turtlebot3_navigation/cmake_install.cmake")
+  include("/home/pjw/turtlebot_ws/build/robot_simulations/turtlebot/turtlebot3_simulations/turtlebot3_simulations/cmake_install.cmake")
+  include("/home/pjw/turtlebot_ws/build/leader_follower/cmake_install.cmake")
+  include("/home/pjw/turtlebot_ws/build/path_tracking/pure_pursuit_controller/cmake_install.cmake")
+  include("/home/pjw/turtlebot_ws/build/me5413/cmake_install.cmake")
+  include("/home/pjw/turtlebot_ws/build/robot_simulations/turtlebot/turtlebot3/turtlebot3_bringup/cmake_install.cmake")
+  include("/home/pjw/turtlebot_ws/build/robot_simulations/turtlebot/turtlebot3/turtlebot3_example/cmake_install.cmake")
+  include("/home/pjw/turtlebot_ws/build/robot_simulations/turtlebot/turtlebot3_simulations/turtlebot3_fake/cmake_install.cmake")
+  include("/home/pjw/turtlebot_ws/build/robot_simulations/turtlebot/turtlebot3_simulations/turtlebot3_gazebo/cmake_install.cmake")
+  include("/home/pjw/turtlebot_ws/build/robot_simulations/turtlebot/turtlebot3/turtlebot3_slam/cmake_install.cmake")
+  include("/home/pjw/turtlebot_ws/build/robot_simulations/turtlebot/turtlebot3/turtlebot3_teleop/cmake_install.cmake")
+  include("/home/pjw/turtlebot_ws/build/nav_learn/cmake_install.cmake")
+  include("/home/pjw/turtlebot_ws/build/robot_simulations/turtlebot/turtlebot3/turtlebot3_description/cmake_install.cmake")
 
 endif()
 
@@ -171,5 +177,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/pjw/Turtlebot_tracking/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/pjw/turtlebot_ws/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

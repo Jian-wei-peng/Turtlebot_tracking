@@ -1,12 +1,12 @@
 file(REMOVE_RECURSE
-  "/home/pjw/Turtlebot_tracking/devel/lib/python3/dist-packages/turtlebot3_example/msg/_Turtlebot3Action.py"
-  "/home/pjw/Turtlebot_tracking/devel/lib/python3/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionFeedback.py"
-  "/home/pjw/Turtlebot_tracking/devel/lib/python3/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionGoal.py"
-  "/home/pjw/Turtlebot_tracking/devel/lib/python3/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionResult.py"
-  "/home/pjw/Turtlebot_tracking/devel/lib/python3/dist-packages/turtlebot3_example/msg/_Turtlebot3Feedback.py"
-  "/home/pjw/Turtlebot_tracking/devel/lib/python3/dist-packages/turtlebot3_example/msg/_Turtlebot3Goal.py"
-  "/home/pjw/Turtlebot_tracking/devel/lib/python3/dist-packages/turtlebot3_example/msg/_Turtlebot3Result.py"
-  "/home/pjw/Turtlebot_tracking/devel/lib/python3/dist-packages/turtlebot3_example/msg/__init__.py"
+  "/home/pjw/turtlebot_ws/devel/lib/python3/dist-packages/turtlebot3_example/msg/_Turtlebot3Action.py"
+  "/home/pjw/turtlebot_ws/devel/lib/python3/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionFeedback.py"
+  "/home/pjw/turtlebot_ws/devel/lib/python3/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionGoal.py"
+  "/home/pjw/turtlebot_ws/devel/lib/python3/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionResult.py"
+  "/home/pjw/turtlebot_ws/devel/lib/python3/dist-packages/turtlebot3_example/msg/_Turtlebot3Feedback.py"
+  "/home/pjw/turtlebot_ws/devel/lib/python3/dist-packages/turtlebot3_example/msg/_Turtlebot3Goal.py"
+  "/home/pjw/turtlebot_ws/devel/lib/python3/dist-packages/turtlebot3_example/msg/_Turtlebot3Result.py"
+  "/home/pjw/turtlebot_ws/devel/lib/python3/dist-packages/turtlebot3_example/msg/__init__.py"
   "CMakeFiles/turtlebot3_example_generate_messages_py"
 )
 

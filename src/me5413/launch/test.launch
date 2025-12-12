@@ -1,0 +1,8 @@
+<launch>
+
+    <node pkg="me5413" type="path_node" name="path_publisher_node" output="screen" />
+
+    <node pkg="me5413" type="tracker_node" name="path_tracker_node" output="screen" />
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find me5413_world)/rviz/navigation.rviz" output="log" respawn="true"/>
+</launch>

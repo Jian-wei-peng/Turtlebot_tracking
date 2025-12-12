@@ -1,8 +1,8 @@
-prefix=/home/pjw/Turtlebot_tracking/devel
+prefix=/home/pjw/turtlebot_ws/devel
 
 Name: turtlebot3_msgs
 Description: Description of turtlebot3_msgs
 Version: 1.0.1
-Cflags: -I/home/pjw/Turtlebot_tracking/devel/include
+Cflags: -I/home/pjw/turtlebot_ws/devel/include
 Libs: -L${prefix}/lib 
 Requires: std_msgs message_runtime

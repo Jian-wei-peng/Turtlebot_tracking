@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/pjw/Turtlebot_tracking/devel/include/pure_pursuit_controller/PurePursuitConfig.h"
-  "/home/pjw/Turtlebot_tracking/devel/lib/python3/dist-packages/pure_pursuit_controller/cfg/PurePursuitConfig.py"
-  "/home/pjw/Turtlebot_tracking/devel/share/pure_pursuit_controller/docs/PurePursuitConfig-usage.dox"
-  "/home/pjw/Turtlebot_tracking/devel/share/pure_pursuit_controller/docs/PurePursuitConfig.dox"
-  "/home/pjw/Turtlebot_tracking/devel/share/pure_pursuit_controller/docs/PurePursuitConfig.wikidoc"
+  "/home/pjw/turtlebot_ws/devel/include/pure_pursuit_controller/PurePursuitConfig.h"
+  "/home/pjw/turtlebot_ws/devel/lib/python3/dist-packages/pure_pursuit_controller/cfg/PurePursuitConfig.py"
+  "/home/pjw/turtlebot_ws/devel/share/pure_pursuit_controller/docs/PurePursuitConfig-usage.dox"
+  "/home/pjw/turtlebot_ws/devel/share/pure_pursuit_controller/docs/PurePursuitConfig.dox"
+  "/home/pjw/turtlebot_ws/devel/share/pure_pursuit_controller/docs/PurePursuitConfig.wikidoc"
   "CMakeFiles/pure_pursuit_controller_gencfg"
 )
 

@@ -1,0 +1,74 @@
+<launch>
+    <arg name="model"           default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+    <arg name="leader_tb3"      default="leader"/>
+    <arg name="follower_tb3"    default="follower"/>
+    <arg name="leader_x_pos"    default="0.0"/>
+    <arg name="leader_y_pos"    default="0.0"/>
+    <arg name="leader_z_pos"    default="0.0"/>
+    <arg name="leader_yaw"      default="0.0"/>
+    <arg name="follower_x_pos"  default="-1.0"/>
+    <arg name="follower_y_pos"  default=" 0.0"/>
+    <arg name="follower_z_pos"  default=" 0.0"/>
+    <arg name="follower_yaw"    default=" 0.0"/>
+    <param name="use_sim_time" value="true"/>
+
+    <!-- Map server -->
+    <arg name="map_file" default="$(find leader_follower)/maps/leader-follower.yaml"/>
+    <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
+
+    <!-- 启动 Gazebo -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name"      value="$(find leader_follower)/worlds/leader-follower.world"/>
+        <arg name="paused"          value="false"/>
+        <arg name="use_sim_time"    value="true"/>
+        <arg name="gui"             value="true"/>
+        <arg name="headless"        value="false"/>
+        <arg name="debug"           value="false"/>
+    </include> 
+
+    <!-- 加载 leader -->
+    <group ns = "$(arg leader_tb3)">
+        <!-- 将 turtlebot3 的模型写入参数服务器 -->
+        <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro' name_space:=$(arg leader_tb3)"/>
+
+        <!-- 启动机器人状态发布节点 -->
+        <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen">
+            <param name="publish_frequency" type="double" value="50.0" />
+            <!-- prefix 推荐用下划线后缀而不是斜杠, 避免与 frame 名称混淆  -->
+            <param name="tf_prefix" value="$(arg leader_tb3)" />
+        </node>
+        
+        <!-- 在 Gazebo 中加载机器人模型 -->
+        <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(arg leader_tb3) 
+                                                                                -x $(arg leader_x_pos) 
+                                                                                -y $(arg leader_y_pos) 
+                                                                                -z $(arg leader_z_pos) 
+                                                                                -Y $(arg leader_yaw) 
+                                                                                -param robot_description" />
+    </group>
+
+    <!-- 加载 follower -->
+    <group ns = "$(arg follower_tb3)">
+        <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro' name_space:=$(arg follower_tb3)"/>
+
+        <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen">
+            <param name="publish_frequency" type="double" value="50.0" />
+            <param name="tf_prefix" value="$(arg follower_tb3)" />
+        </node>
+
+        <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(arg follower_tb3) 
+                                                                                -x $(arg follower_x_pos) 
+                                                                                -y $(arg follower_y_pos) 
+                                                                                -z $(arg follower_z_pos) 
+                                                                                -Y $(arg follower_yaw) 
+                                                                                -param robot_description" />
+    </group>
+
+    <!-- 发布静态坐标变换 (都设置为0表示初始时刻机器人的里程计坐标系(odom)与世界坐标系(world)是重合的) -->
+    <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="world_to_leader_odom"   args="0 0 0 0 0 0 world $(arg leader_tb3)/odom" /> -->
+    <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="world_to_follower_odom" args="0 0 0 0 0 0 world $(arg follower_tb3)/odom" /> -->
+
+    <!-- 启动 RViz 可视化工具 -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find leader_follower)/config/leader_follower.rviz" />
+
+</launch>

@@ -67,14 +67,14 @@ set(pure_pursuit_controller_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(pure_pursuit_controller_SOURCE_PREFIX /home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller)
-  set(pure_pursuit_controller_DEVEL_PREFIX /home/pjw/Turtlebot_tracking/devel)
+  set(pure_pursuit_controller_SOURCE_PREFIX /home/pjw/turtlebot_ws/src/path_tracking/pure_pursuit_controller)
+  set(pure_pursuit_controller_DEVEL_PREFIX /home/pjw/turtlebot_ws/devel)
   set(pure_pursuit_controller_INSTALL_PREFIX "")
   set(pure_pursuit_controller_PREFIX ${pure_pursuit_controller_DEVEL_PREFIX})
 else()
   set(pure_pursuit_controller_SOURCE_PREFIX "")
   set(pure_pursuit_controller_DEVEL_PREFIX "")
-  set(pure_pursuit_controller_INSTALL_PREFIX /home/pjw/Turtlebot_tracking/install)
+  set(pure_pursuit_controller_INSTALL_PREFIX /home/pjw/turtlebot_ws/install)
   set(pure_pursuit_controller_PREFIX ${pure_pursuit_controller_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(pure_pursuit_controller_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/pjw/Turtlebot_tracking/devel/include;/home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/include " STREQUAL " ")
+if(NOT "/home/pjw/turtlebot_ws/devel/include;/home/pjw/turtlebot_ws/src/path_tracking/pure_pursuit_controller/include " STREQUAL " ")
   set(pure_pursuit_controller_INCLUDE_DIRS "")
-  set(_include_dirs "/home/pjw/Turtlebot_tracking/devel/include;/home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/include")
+  set(_include_dirs "/home/pjw/turtlebot_ws/devel/include;/home/pjw/turtlebot_ws/src/path_tracking/pure_pursuit_controller/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/pjw/Turtlebot_tracking/devel/include;/home/pjw/Turtlebot_tracking/
         message(FATAL_ERROR "Project 'pure_pursuit_controller' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'pure_pursuit_controller' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/pjw/Turtlebot_tracking/src/path_tracking/pure_pursuit_controller/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'pure_pursuit_controller' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/pjw/turtlebot_ws/src/path_tracking/pure_pursuit_controller/${idir}'.  ${_report}")
     endif()
     _list_append_unique(pure_pursuit_controller_INCLUDE_DIRS ${include})
   endforeach()
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/pjw/Turtlebot_tracking/devel/lib;/home/pjw/ME5413_Planning_Project/devel/lib;/home/pjw/Turtlebot_tracking/devel/lib;/home/pjw/gaofei_planner/motion_planning/devel/lib;/home/pjw/NavRL/ros1/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/pjw/turtlebot_ws/devel/lib;/home/pjw/multi_diffcar_ws/devel/lib;/home/pjw/drone_tracking/Fast-Tracker/devel/lib;/home/pjw/drone_tracking/gazebo_ws/devel/lib;/home/pjw/rpf_search/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

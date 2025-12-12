@@ -1,8 +1,8 @@
-# Install script for directory: /home/pjw/Turtlebot_tracking/src/robot_simulations/turtlebot/turtlebot3/turtlebot3_description
+# Install script for directory: /home/pjw/turtlebot_ws/src/robot_simulations/turtlebot/turtlebot3/turtlebot3_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/pjw/Turtlebot_tracking/install")
+  set(CMAKE_INSTALL_PREFIX "/home/pjw/turtlebot_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,26 +37,31 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/pjw/Turtlebot_tracking/build/robot_simulations/turtlebot/turtlebot3/turtlebot3_description/catkin_generated/installspace/turtlebot3_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/pjw/turtlebot_ws/build/robot_simulations/turtlebot/turtlebot3/turtlebot3_description/catkin_generated/installspace/turtlebot3_description.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_description/cmake" TYPE FILE FILES
-    "/home/pjw/Turtlebot_tracking/build/robot_simulations/turtlebot/turtlebot3/turtlebot3_description/catkin_generated/installspace/turtlebot3_descriptionConfig.cmake"
-    "/home/pjw/Turtlebot_tracking/build/robot_simulations/turtlebot/turtlebot3/turtlebot3_description/catkin_generated/installspace/turtlebot3_descriptionConfig-version.cmake"
+    "/home/pjw/turtlebot_ws/build/robot_simulations/turtlebot/turtlebot3/turtlebot3_description/catkin_generated/installspace/turtlebot3_descriptionConfig.cmake"
+    "/home/pjw/turtlebot_ws/build/robot_simulations/turtlebot/turtlebot3/turtlebot3_description/catkin_generated/installspace/turtlebot3_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_description" TYPE FILE FILES "/home/pjw/Turtlebot_tracking/src/robot_simulations/turtlebot/turtlebot3/turtlebot3_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_description" TYPE FILE FILES "/home/pjw/turtlebot_ws/src/robot_simulations/turtlebot/turtlebot3/turtlebot3_description/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_description" TYPE DIRECTORY FILES
-    "/home/pjw/Turtlebot_tracking/src/robot_simulations/turtlebot/turtlebot3/turtlebot3_description/meshes"
-    "/home/pjw/Turtlebot_tracking/src/robot_simulations/turtlebot/turtlebot3/turtlebot3_description/rviz"
-    "/home/pjw/Turtlebot_tracking/src/robot_simulations/turtlebot/turtlebot3/turtlebot3_description/urdf"
+    "/home/pjw/turtlebot_ws/src/robot_simulations/turtlebot/turtlebot3/turtlebot3_description/meshes"
+    "/home/pjw/turtlebot_ws/src/robot_simulations/turtlebot/turtlebot3/turtlebot3_description/rviz"
+    "/home/pjw/turtlebot_ws/src/robot_simulations/turtlebot/turtlebot3/turtlebot3_description/urdf"
     )
 endif()
 

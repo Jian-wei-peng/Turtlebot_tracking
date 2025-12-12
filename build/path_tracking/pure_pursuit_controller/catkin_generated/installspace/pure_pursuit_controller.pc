@@ -1,4 +1,4 @@
-prefix=/home/pjw/Turtlebot_tracking/install
+prefix=/home/pjw/turtlebot_ws/install
 
 Name: pure_pursuit_controller
 Description: Description of pure_pursuit_controller

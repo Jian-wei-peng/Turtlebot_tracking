@@ -1,12 +1,12 @@
 file(REMOVE_RECURSE
-  "/home/pjw/Turtlebot_tracking/devel/share/roseus/ros/turtlebot3_example/manifest.l"
-  "/home/pjw/Turtlebot_tracking/devel/share/roseus/ros/turtlebot3_example/msg/Turtlebot3Action.l"
-  "/home/pjw/Turtlebot_tracking/devel/share/roseus/ros/turtlebot3_example/msg/Turtlebot3ActionFeedback.l"
-  "/home/pjw/Turtlebot_tracking/devel/share/roseus/ros/turtlebot3_example/msg/Turtlebot3ActionGoal.l"
-  "/home/pjw/Turtlebot_tracking/devel/share/roseus/ros/turtlebot3_example/msg/Turtlebot3ActionResult.l"
-  "/home/pjw/Turtlebot_tracking/devel/share/roseus/ros/turtlebot3_example/msg/Turtlebot3Feedback.l"
-  "/home/pjw/Turtlebot_tracking/devel/share/roseus/ros/turtlebot3_example/msg/Turtlebot3Goal.l"
-  "/home/pjw/Turtlebot_tracking/devel/share/roseus/ros/turtlebot3_example/msg/Turtlebot3Result.l"
+  "/home/pjw/turtlebot_ws/devel/share/roseus/ros/turtlebot3_example/manifest.l"
+  "/home/pjw/turtlebot_ws/devel/share/roseus/ros/turtlebot3_example/msg/Turtlebot3Action.l"
+  "/home/pjw/turtlebot_ws/devel/share/roseus/ros/turtlebot3_example/msg/Turtlebot3ActionFeedback.l"
+  "/home/pjw/turtlebot_ws/devel/share/roseus/ros/turtlebot3_example/msg/Turtlebot3ActionGoal.l"
+  "/home/pjw/turtlebot_ws/devel/share/roseus/ros/turtlebot3_example/msg/Turtlebot3ActionResult.l"
+  "/home/pjw/turtlebot_ws/devel/share/roseus/ros/turtlebot3_example/msg/Turtlebot3Feedback.l"
+  "/home/pjw/turtlebot_ws/devel/share/roseus/ros/turtlebot3_example/msg/Turtlebot3Goal.l"
+  "/home/pjw/turtlebot_ws/devel/share/roseus/ros/turtlebot3_example/msg/Turtlebot3Result.l"
   "CMakeFiles/turtlebot3_example_generate_messages_eus"
 )
 

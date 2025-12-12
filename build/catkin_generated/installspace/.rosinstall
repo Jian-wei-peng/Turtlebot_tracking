@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/pjw/Turtlebot_tracking/install/setup.sh
+    local-name: /home/pjw/turtlebot_ws/install/setup.sh

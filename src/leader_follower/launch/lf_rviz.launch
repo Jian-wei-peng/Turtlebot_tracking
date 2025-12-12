@@ -1,0 +1,100 @@
+<launch>
+
+    <arg name="model"               default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+    <arg name="open_rviz"           default="true"/>
+    <arg name="move_forward_only"   default="false"/>
+
+    <arg name="leader_tb3"          default="leader"/>
+    <arg name="follower_tb3"        default="follower"/>
+    <arg name="leader_x_pos"        default="0.0"/>
+    <arg name="leader_y_pos"        default="0.0"/>
+    <arg name="leader_z_pos"        default="0.0"/>
+    <arg name="leader_yaw"          default="0.0"/>
+    <arg name="follower_x_pos"      default="-1.0"/>
+    <arg name="follower_y_pos"      default=" 0.0"/>
+    <arg name="follower_z_pos"      default=" 0.0"/>
+    <arg name="follower_yaw"        default=" 0.0"/>
+
+    <!-- Map server -->
+    <arg name="map_file" default="$(find leader_follower)/maps/leader-follower.yaml"/>
+    <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
+
+    <!-- 加载 leader -->
+    <group ns = "$(arg leader_tb3)">
+
+        <!-- Map server -->
+        <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
+
+        <!-- Turtlebot3 -->
+        <!-- <include file="$(find turtlebot3_bringup)/launch/turtlebot3_remote.launch">
+            <arg name="model"               value="$(arg model)" />
+            <arg name="multi_robot_name"    value="$(arg leader_tb3)" />
+        </include> -->
+
+        <!-- AMCL -->
+        <include file="$(find leader_follower)/launch/include/lf_amcl.launch">
+            <arg name="global_frame_id" value="map"/>
+            <arg name="odom_frame_id"   value="$(arg leader_tb3)/odom"/>
+            <arg name="base_frame_id"   value="$(arg leader_tb3)/base_footprint"/> 
+            <arg name="initial_pose_x"  value="$(arg leader_x_pos)"/>
+            <arg name="initial_pose_y"  value="$(arg leader_y_pos)"/>
+            <arg name="initial_pose_a"  value="$(arg leader_z_pos)"/>
+        </include>
+
+        <!-- move_base -->
+        <include file="$(find leader_follower)/launch/include/lf_move_base.launch">
+            <arg name="global_frame_id"     value="map"/>
+            <arg name="odom_frame_id"       value="$(arg leader_tb3)/odom"/>
+            <arg name="base_frame_id"       value="$(arg leader_tb3)/base_footprint"/>
+            <arg name="odom_topic"          value="/$(arg leader_tb3)/odom" />
+            <arg name="laser_topic"         value="/$(arg leader_tb3)/scan" />
+            <arg name="cmd_vel_topic"       value="/$(arg leader_tb3)/cmd_vel" />
+            <arg name="model"               value="$(arg model)" />
+            <arg name="move_forward_only"   value="$(arg move_forward_only)"/>
+        </include>
+
+    </group>
+
+    <!-- 加载 follower -->
+    <group ns = "$(arg follower_tb3)">
+
+        <!-- Map server -->
+        <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
+
+        <!-- Turtlebot3 -->
+        <!-- <include file="$(find turtlebot3_bringup)/launch/turtlebot3_remote.launch">
+            <arg name="model"               value="$(arg model)" />
+            <arg name="multi_robot_name"    value="$(arg follower_tb3)" />
+        </include> -->
+
+        <!-- AMCL -->
+        <include file="$(find leader_follower)/launch/include/lf_amcl.launch">
+            <arg name="global_frame_id" value="map"/>
+            <arg name="odom_frame_id"   value="$(arg follower_tb3)/odom"/>
+            <arg name="base_frame_id"   value="$(arg follower_tb3)/base_footprint"/> 
+            <arg name="initial_pose_x"  value="$(arg follower_x_pos)"/>
+            <arg name="initial_pose_y"  value="$(arg follower_y_pos)"/>
+            <arg name="initial_pose_a"  value="$(arg follower_z_pos)"/>
+        </include>
+
+        <!-- move_base -->
+        <include file="$(find leader_follower)/launch/include/lf_move_base.launch">
+            <arg name="global_frame_id"     value="map"/>
+            <arg name="odom_frame_id"       value="$(arg follower_tb3)/odom"/>
+            <arg name="base_frame_id"       value="$(arg follower_tb3)/base_footprint"/>
+            <arg name="odom_topic"          value="/$(arg follower_tb3)/odom" />
+            <arg name="laser_topic"         value="/$(arg follower_tb3)/scan" />
+            <arg name="cmd_vel_topic"       value="/$(arg follower_tb3)/cmd_vel" />
+            <arg name="model"               value="$(arg model)" />
+            <arg name="move_forward_only"   value="$(arg move_forward_only)"/>
+        </include>
+
+    </group>
+
+    <!-- rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find leader_follower)/config/leader_follower.rviz" />
+    <!-- <group if="$(arg open_rviz)"> 
+        <node pkg="rviz" type="rviz" name="rviz" required="true"
+            args="-d $(find turtlebot3_navigation)/rviz/turtlebot3_navWjx.rviz"/>
+    </group> -->
+</launch>

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/pjw/Turtlebot_tracking/devel/lib/python3/dist-packages/turtlebot3_msgs/msg/_SensorState.py"
-  "/home/pjw/Turtlebot_tracking/devel/lib/python3/dist-packages/turtlebot3_msgs/msg/_Sound.py"
-  "/home/pjw/Turtlebot_tracking/devel/lib/python3/dist-packages/turtlebot3_msgs/msg/_VersionInfo.py"
-  "/home/pjw/Turtlebot_tracking/devel/lib/python3/dist-packages/turtlebot3_msgs/msg/__init__.py"
+  "/home/pjw/turtlebot_ws/devel/lib/python3/dist-packages/turtlebot3_msgs/msg/_SensorState.py"
+  "/home/pjw/turtlebot_ws/devel/lib/python3/dist-packages/turtlebot3_msgs/msg/_Sound.py"
+  "/home/pjw/turtlebot_ws/devel/lib/python3/dist-packages/turtlebot3_msgs/msg/_VersionInfo.py"
+  "/home/pjw/turtlebot_ws/devel/lib/python3/dist-packages/turtlebot3_msgs/msg/__init__.py"
   "CMakeFiles/turtlebot3_msgs_generate_messages_py"
 )
 

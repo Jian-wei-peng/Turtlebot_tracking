@@ -1,0 +1,8 @@
+prefix=/home/pjw/turtlebot_ws/devel
+
+Name: me5413
+Description: Description of me5413
+Version: 0.0.0
+Cflags: -I/home/pjw/turtlebot_ws/src/me5413/include
+Libs: -L${prefix}/lib -lme5413
+Requires: roscpp std_msgs nav_msgs geometry_msgs tf2 tf2_ros tf2_geometry_msgs

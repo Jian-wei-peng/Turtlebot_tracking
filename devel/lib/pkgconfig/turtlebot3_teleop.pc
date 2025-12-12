@@ -1,4 +1,4 @@
-prefix=/home/pjw/Turtlebot_tracking/devel
+prefix=/home/pjw/turtlebot_ws/devel
 
 Name: turtlebot3_teleop
 Description: Description of turtlebot3_teleop

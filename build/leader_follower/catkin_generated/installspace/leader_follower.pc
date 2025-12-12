@@ -1,0 +1,8 @@
+prefix=/home/pjw/turtlebot_ws/install
+
+Name: leader_follower
+Description: Description of leader_follower
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

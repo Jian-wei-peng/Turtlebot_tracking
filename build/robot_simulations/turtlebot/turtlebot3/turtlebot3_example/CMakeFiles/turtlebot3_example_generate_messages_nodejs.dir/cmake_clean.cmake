@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
-  "/home/pjw/Turtlebot_tracking/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3Action.js"
-  "/home/pjw/Turtlebot_tracking/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3ActionFeedback.js"
-  "/home/pjw/Turtlebot_tracking/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3ActionGoal.js"
-  "/home/pjw/Turtlebot_tracking/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3ActionResult.js"
-  "/home/pjw/Turtlebot_tracking/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3Feedback.js"
-  "/home/pjw/Turtlebot_tracking/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3Goal.js"
-  "/home/pjw/Turtlebot_tracking/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3Result.js"
+  "/home/pjw/turtlebot_ws/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3Action.js"
+  "/home/pjw/turtlebot_ws/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3ActionFeedback.js"
+  "/home/pjw/turtlebot_ws/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3ActionGoal.js"
+  "/home/pjw/turtlebot_ws/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3ActionResult.js"
+  "/home/pjw/turtlebot_ws/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3Feedback.js"
+  "/home/pjw/turtlebot_ws/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3Goal.js"
+  "/home/pjw/turtlebot_ws/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3Result.js"
   "CMakeFiles/turtlebot3_example_generate_messages_nodejs"
 )
 

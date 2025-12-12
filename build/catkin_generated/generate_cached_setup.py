@@ -12,16 +12,16 @@ try:
     from catkin.environment_cache import generate_environment_script
 except ImportError:
     # search for catkin package in all workspaces and prepend to path
-    for workspace in '/home/pjw/ME5413_Planning_Project/devel;/home/pjw/Turtlebot_tracking/devel;/home/pjw/gaofei_planner/motion_planning/devel;/home/pjw/NavRL/ros1/devel;/opt/ros/noetic'.split(';'):
+    for workspace in '/home/pjw/multi_diffcar_ws/devel;/home/pjw/drone_tracking/Fast-Tracker/devel;/home/pjw/drone_tracking/gazebo_ws/devel;/home/pjw/rpf_search/devel;/opt/ros/noetic'.split(';'):
         python_path = os.path.join(workspace, 'lib/python3/dist-packages')
         if os.path.isdir(os.path.join(python_path, 'catkin')):
             sys.path.insert(0, python_path)
             break
     from catkin.environment_cache import generate_environment_script
 
-code = generate_environment_script('/home/pjw/Turtlebot_tracking/devel/env.sh')
+code = generate_environment_script('/home/pjw/turtlebot_ws/devel/env.sh')
 
-output_filename = '/home/pjw/Turtlebot_tracking/build/catkin_generated/setup_cached.sh'
+output_filename = '/home/pjw/turtlebot_ws/build/catkin_generated/setup_cached.sh'
 with open(output_filename, 'w') as f:
     # print('Generate script for cached setup "%s"' % output_filename)
     f.write('\n'.join(code))
