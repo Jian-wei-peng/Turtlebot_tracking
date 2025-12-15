@@ -7,7 +7,8 @@
         "/home/pjw/turtlebot_ws/devel/include/**",
         "/home/pjw/turtlebot_ws/src/robot_simulations/turtlebot/turtlebot3_simulations/turtlebot3_fake/include/**",
         "/home/pjw/turtlebot_ws/src/path_tracking/pure_pursuit_controller/include/**",
-        "/home/pjw/turtlebot_ws/src/me5413/include/**"
+        "/home/pjw/turtlebot_ws/src/me5413/include/**",
+        "/home/pjw/turtlebot_ws/src/actor_plugin/gazebo_ros_actor_plugin/include/**"
       ],
       "compilerPath": "/usr/bin/gcc",
       "cStandard": "${default}",
