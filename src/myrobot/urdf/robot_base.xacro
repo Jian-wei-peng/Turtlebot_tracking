@@ -1,0 +1,137 @@
+<robot name="robot_base" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:property name="PI" value="3.1415926"/>
+
+    <!-- 1. base_footprint -->
+    <xacro:property name="footprint_radius" value="0.001" />
+    <link name="base_footprint">
+        <visual>
+            <geometry>
+                <sphere radius="${footprint_radius}"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <!-- 2. 底盘base_link -->
+    <xacro:property name="base_radius" value="0.2625" />
+    <xacro:property name="base_height" value="0.2625" />
+    <xacro:property name="base_mass" value="40" />
+    <xacro:property name="earth_space" value="0.05" />
+    <xacro:property name="base_joint_z" value="${base_height/2 + earth_space}" />
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${base_radius}" length="${base_height}"/>
+            </geometry>
+            <material name="Orange"/>
+        </visual>
+        <!-- 碰撞属性（gazebo仿真必需项） -->
+        <collision>
+            <geometry>
+                <cylinder radius="${base_radius}" length="${base_height}"/>
+            </geometry>
+        </collision>
+        <!-- 调用惯性矩阵函数 -->
+        <xacro:cylinder_inertial_matrix m="${base_mass}" r="${base_radius}" h="${base_height}" />
+    </link>
+    <!-- 设置base_footprint和base_link之间的joint -->
+    <joint name="link2footprint" type="fixed">
+        <parent link="base_footprint"/>
+        <child link="base_link"/>
+        <origin xyz="0 0 ${base_joint_z}" rpy="0 0 0"/>
+    </joint>
+    <!-- gazebo的颜色属性设置 -->
+    <gazebo reference="base_link">
+        <material>Gazebo/Orange</material>
+    </gazebo>
+
+    <!-- 3. 两个驱动轮 -->
+    <xacro:property name="wheel_radius" value="0.108" />
+    <xacro:property name="wheel_width" value="0.05" />
+    <xacro:property name="wheel_mass" value="0.7" />
+    <xacro:property name="wheel_joint_y" value="0.2" />
+    <xacro:property name="wheel_joint_z" value="${-1 * (base_height/2 + earth_space - wheel_radius)}" />
+    <xacro:macro name="wheel" params="wheel_name flag"> 
+        <link name="${wheel_name}_wheel">
+            <visual>
+                <geometry>
+                    <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+                </geometry>
+                <origin xyz="0.0 0.0 0.0" rpy="${PI / 2} 0.0 0.0"/>
+                <material name="Gray" />
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+                </geometry>
+                <origin xyz="0.0 0.0 0.0" rpy="${PI / 2} 0.0 0.0"/>
+            </collision>
+            <xacro:cylinder_inertial_matrix m="${wheel_mass}" r="${wheel_radius}" h="${wheel_width}" />            
+        </link>
+        <!-- wheel和base_link之间的joint -->
+        <joint name="${wheel_name}2link" type="continuous">
+            <parent link="base_link"/>
+            <child link="${wheel_name}_wheel"/>
+            <origin xyz="0.0 ${wheel_joint_y * flag} ${wheel_joint_z}" rpy="0.0 0.0 0.0"/>
+            <axis xyz="0.0 1.0 0.0"/>
+        </joint>
+        <gazebo reference="${wheel_name}_wheel">
+            <material>Gazebo/Gray</material>
+        </gazebo>
+        <!-- 为joint添加传动装置 -->
+        <transmission name="${wheel_name}_wheel_joint_trans">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="${wheel_name}2link">
+                <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+            </joint>
+            <actuator name="${wheel_name}_wheel_joint_motor">
+                <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+                <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+        </transmission>
+    </xacro:macro>
+    <!-- 调用驱动的宏 -->
+    <xacro:wheel wheel_name="left" flag="1" />
+    <xacro:wheel wheel_name="right" flag="-1" />
+
+    <!-- 4. 四个支撑万向轮 -->
+    <xacro:property name="caster_radius" value="0.04" />
+    <xacro:property name="caster_mass" value="0.1" />
+    <xacro:property name="caster_joint_x" value="0.15" /> 
+    <xacro:property name="caster_joint_y" value="0.12" /> 
+    <xacro:property name="caster_joint_z" value="${-1 * (base_height/2 + earth_space - caster_radius)}" /> 
+    <xacro:macro name="caster" params="caster_name flag_x flag_y">
+        <link name="${caster_name}_wheel">
+            <visual>
+                <geometry>
+                    <sphere radius="${caster_radius}" />
+                </geometry>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <material name="Gray" />
+            </visual>
+            <collision>
+                <geometry>
+                    <sphere radius="${caster_radius}" />
+                </geometry>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </collision>
+            <xacro:sphere_inertial_matrix m="${caster_mass}" r="${caster_radius}" /> 
+        </link>
+        <!-- caster和base_link之间的joint -->
+        <joint name="${caster_name}2link" type="continuous">
+            <parent link="base_link"/>
+            <child link="${caster_name}_wheel"/>
+            <origin xyz="${caster_joint_x * flag_x} ${caster_joint_y * flag_y} ${caster_joint_z}" rpy="0.0 0.0 0.0"/>
+            <axis xyz="1.0 1.0 1.0"/>
+        </joint>
+        <gazebo reference="${caster_name}_wheel">
+            <material>Gazebo/Gray</material>
+        </gazebo>
+    </xacro:macro>
+    <!-- 调用万向轮的宏 -->
+    <xacro:caster caster_name="front_l" flag_x="1" flag_y="1" />
+    <xacro:caster caster_name="front_r" flag_x="1" flag_y="-1" />
+    <xacro:caster caster_name="back_l" flag_x="-1" flag_y="1" />
+    <xacro:caster caster_name="back_r" flag_x="-1" flag_y="-1" />
+
+</robot>

@@ -3,6 +3,6 @@ prefix=/home/pjw/turtlebot_ws/devel
 Name: turtlebot3_fake
 Description: Description of turtlebot3_fake
 Version: 1.3.2
-Cflags: -I/home/pjw/turtlebot_ws/src/robot_simulations/turtlebot/turtlebot3_simulations/turtlebot3_fake/include
+Cflags: -I/home/pjw/turtlebot_ws/src/turtlebot/turtlebot3_simulations/turtlebot3_fake/include
 Libs: -L${prefix}/lib 
 Requires: roscpp std_msgs sensor_msgs geometry_msgs nav_msgs tf turtlebot3_msgs

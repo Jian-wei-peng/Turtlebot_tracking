@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- 机器人的初始位置 gazebo中红线是x轴正向 绿线是y轴正向 actor朝向y轴负方向-->
+    <arg name="x_init" default="0.0"/>
+    <arg name="y_init" default="0.0"/>
+    <arg name="z_init" default="0.0"/>
+
+    <!-- 在参数服务器中载入模型文件 -->
+    <arg name="urdf_file" default="$(find myrobot)/urdf/robot.xacro" />
+    <param name="robot_description" command="$(find xacro)/xacro $(arg urdf_file)" />
+
+    <!-- 启动 gazebo -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
+        <arg name="world_name" value="$(find myrobot)/worlds/myworld.world"/> 
+        <arg name="paused" value="false"/>
+        <arg name="use_sim_time" value="true"/>
+        <arg name="gui" value="true"/>
+        <arg name="recording" value="false"/>
+        <arg name="debug" value="false"/>
+    </include>
+    
+    <!-- 在gazebo中显示机器人模型 -->
+    <node name="model" pkg="gazebo_ros" type="spawn_model" 
+                                        args="-urdf -model myrobot 
+                                                    -x $(arg x_init) 
+                                                    -y $(arg y_init) 
+                                                    -z $(arg z_init) 
+                                                    -param robot_description" />
+
+
+    <!-- <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find myrobot)/rviz/myrobot.rviz"/> -->
+
+</launch>

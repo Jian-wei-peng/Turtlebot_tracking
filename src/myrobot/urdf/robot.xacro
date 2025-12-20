@@ -1,0 +1,16 @@
+<!-- 组合机器人各部件的xacro文件 -->
+<robot name="myRobot" xmlns:xacro="http://wiki.ros.org/xacro">
+
+    <xacro:include filename="inertials.xacro" />
+    <xacro:include filename="materials.xacro" />
+    <xacro:include filename="robot_base.xacro" />
+    <xacro:include filename="robot_laser.xacro" />
+    
+    <!-- 运动控制 -->
+    <xacro:include filename="gazebo/gazebo_control.xacro" />
+    <!-- 激光雷达 -->
+    <xacro:include filename="gazebo/laser.xacro" />
+    
+</robot>
+
+

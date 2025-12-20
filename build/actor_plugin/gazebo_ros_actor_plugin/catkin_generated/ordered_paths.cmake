@@ -1,1 +1,0 @@
-set(ORDERED_PATHS "/home/pjw/drone_tracking/gazebo_ws/devel/.private/gazebo_ros/lib;/home/pjw/drone_tracking/gazebo_ws/devel/.private/gazebo_plugins/lib;/opt/ros/noetic/lib")
